@@ -14,3 +14,4 @@ socket.on('chat message', (msg) => {
   item.innerHTML = msg;
   document.getElementById('messages').appendChild(item);
 });
+
