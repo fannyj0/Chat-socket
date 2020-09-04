@@ -23,6 +23,10 @@ const userList = document.getElementById('users');
 const parsedSearch = (location.search.substring(0,1) === '?') ? location.search.substring(1, location.search.length) : location.search;
 const { username, room } = Qs.parse(parsedSearch);
 
+/* const {username, room} = Qs.parse(location.search, {
+    ignoreQueryPrefix: true
+}); */
+
 console.log(username, room);
 
 const socket = io();
